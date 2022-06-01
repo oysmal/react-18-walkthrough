@@ -14,3 +14,19 @@ a {
 * {
   box-sizing: border-box;
 }
+
+nav {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+nav > a {
+  margin: 0 10px;
+  text-decoration: underline;
+}
+
+nav > a.active {
+  background-color: lightblue;
+}

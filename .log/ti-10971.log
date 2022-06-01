@@ -1,0 +1,35 @@
+[20:49:21.583] Global cache location '/home/oysmal/.cache/typescript/4.7', safe file path '/home/oysmal/.config/nvm/versions/node/v16.15.0/lib/node_modules/typescript/lib/typingSafeList.json', types map path /home/oysmal/.config/nvm/versions/node/v16.15.0/lib/node_modules/typescript/lib/typesMap.json
+[20:49:21.583] Processing cache location '/home/oysmal/.cache/typescript/4.7'
+[20:49:21.583] Trying to find '/home/oysmal/.cache/typescript/4.7/package.json'...
+[20:49:21.584] Loaded content of '/home/oysmal/.cache/typescript/4.7/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.594"}}
+[20:49:21.584] Loaded content of '/home/oysmal/.cache/typescript/4.7/package-lock.json'
+[20:49:21.584] Finished processing cache location '/home/oysmal/.cache/typescript/4.7'
+[20:49:21.584] Process id: 10978
+[20:49:21.584] NPM location: /home/oysmal/.config/nvm/versions/node/v16.15.0/bin/npm (explicit '--npmLocation' not  provided)
+[20:49:21.584] validateDefaultNpmLocation: false
+[20:49:21.584] Npm config file: /home/oysmal/.cache/typescript/4.7/package.json
+[20:49:21.584] Updating types-registry npm package...
+[20:49:21.585] Exec: /home/oysmal/.config/nvm/versions/node/v16.15.0/bin/npm install --ignore-scripts types-registry@latest
+[20:49:22.310]     Succeeded. stdout:
+    
+    up to date, audited 2 packages in 591ms
+
+found 0 vulnerabilities
+
+[20:49:22.311] Updated types-registry npm package
+[21:10:13.178] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":[],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/oysmal/projects/react-18-news/components","kind":"discover"}
+[21:10:13.228] Loaded safelist from types map file '/home/oysmal/.config/nvm/versions/node/v16.15.0/lib/node_modules/typescript/lib/typesMap.json'
+[21:10:13.228] Explicitly included types: []
+[21:10:13.229] Inferred typings from unresolved imports: []
+[21:10:13.229] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/oysmal/projects/react-18-news/components/bower_components","/home/oysmal/projects/react-18-news/components/node_modules"]}
+[21:10:13.229] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/oysmal/projects/react-18-news/components/bower_components","/home/oysmal/projects/react-18-news/components/node_modules"]}
+[21:10:13.229] DirectoryWatcher:: Added:: WatchInfo: /home/oysmal/projects/react-18-news/components/bower_components
+[21:10:13.229] DirectoryWatcher:: Added:: WatchInfo: /home/oysmal/projects/react-18-news/components/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[21:10:13.231] Elapsed:: 1.335903000086546ms DirectoryWatcher:: Added:: WatchInfo: /home/oysmal/projects/react-18-news/components/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[21:10:13.231] DirectoryWatcher:: Added:: WatchInfo: /home/oysmal/projects/react-18-news/components/node_modules
+[21:10:13.231] DirectoryWatcher:: Added:: WatchInfo: /home/oysmal/projects/react-18-news/components/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[21:10:13.231] Elapsed:: 0.09423399996012449ms DirectoryWatcher:: Added:: WatchInfo: /home/oysmal/projects/react-18-news/components/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[21:10:13.231] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[21:10:13.232] Response has been sent.
+[21:10:13.232] No new typings were requested as a result of typings discovery

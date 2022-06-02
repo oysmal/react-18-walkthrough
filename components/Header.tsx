@@ -42,6 +42,12 @@ export default function Header() {
         >
           Use Deferred Value Old Alternative
         </Link>
+        <Link
+          className={router.pathname === "/suspense/new-way" ? "active" : ""}
+          href="/suspense/new-way"
+        >
+          Suspense
+        </Link>
       </nav>
     </header>
   );

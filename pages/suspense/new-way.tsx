@@ -12,10 +12,7 @@ export default function SuspenseNewWay() {
       <Header />
       <h1>Suspense</h1>
       <p>Nå støttet for SSR. Er blitt tett integrert med transitions.</p>
-      <Tabs
-        tab={tab}
-        onChangeTab={(tab) => startTransition(() => setTab(tab))}
-      />
+      <Tabs tab={tab} onChangeTab={(tab) => setTab(tab)} />
 
       <main style={{ padding: "10px;" }}>
         {tab === 0 && <div>You are at the start</div>}

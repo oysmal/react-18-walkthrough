@@ -1,4 +1,4 @@
-import { useDeferredValue, useId, useMemo, useState } from "react";
+import { useId, useState } from "react";
 import Header from "../../components/Header";
 import { getWayTooMuchData } from "../Data";
 
@@ -7,16 +7,10 @@ const allData = getWayTooMuchData();
 export default function TypeaheadSelect() {
   const inputId = useId();
   const [searchValue, setSearchValue] = useState("");
-  const deferredQuery = useDeferredValue(searchValue);
 
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchValue(event.target.value.toLowerCase());
   };
-
-  const results = useMemo(
-    () => <Results query={deferredQuery} />,
-    [deferredQuery]
-  );
 
   return (
     <>
@@ -29,7 +23,7 @@ export default function TypeaheadSelect() {
           onChange={onChange}
           value={searchValue}
         />
-        {results}
+        <Results query={searchValue} />
       </main>
     </>
   );

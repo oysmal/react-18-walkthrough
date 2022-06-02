@@ -4,21 +4,14 @@ import { getWayTooMuchData } from "../Data";
 
 const allData = getWayTooMuchData();
 
-let time = 0;
-
 export default function OldList() {
   const [searchValue, setSearchValue] = useState("");
   const [data, setData] = useState<string[]>([]);
 
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchValue(event.target.value);
-    time = performance.now();
     setData(allData.sort(() => (Math.random() > 0.5 ? 1 : -1)));
   };
-
-  useEffect(() => {
-    console.log("Update took ms: ", performance.now() - time);
-  });
 
   return (
     <>
